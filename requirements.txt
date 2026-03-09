@@ -1,0 +1,6 @@
+pygame
+opencv-python
+mediapipe
+numpy
+python-chess
+groq
