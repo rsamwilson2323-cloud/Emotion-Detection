@@ -1,110 +1,118 @@
-😊 Emotion Detection System
+# 😊 Emotion Detection System
 
-A Python-based Emotion Detection System that identifies human emotions from facial expressions using Computer Vision and Deep Learning.
+Emotion Detection System is a Python-based project that identifies **human emotions from facial expressions** using **Computer Vision and Deep Learning**.
 
-This project includes two main parts:
+The system uses **OpenCV 🎥** for image processing and the **FER (Facial Emotion Recognition) library with MTCNN 🧠** for accurate face detection and emotion prediction.
 
-🧠 Training using emotion images
+The program detects emotions directly from the **webcam in real time** without requiring a custom dataset.
 
-🎥 Real-time emotion detection using webcam
+---
 
-The system uses OpenCV for image processing and the FER (Facial Emotion Recognition) library with MTCNN for accurate face detection and emotion prediction.
+# ✨ Features
 
-📂 Project Structure
+✅ Real-time **emotion detection using webcam**
+✅ Detects **multiple faces simultaneously**
+✅ Displays **emotion with confidence percentage**
+✅ Uses **MTCNN for better face detection accuracy**
+✅ Simple and easy-to-run Python implementation
+
+---
+
+# 🧠 Emotions Detected
+
+The system can detect the following emotions:
+
+😄 **Happy**
+😲 **Surprise**
+😨 **Fear**
+😢 **Sad**
+😡 **Angry**
+
+⚠️ Neutral emotion may appear depending on the FER model.
+
+---
+
+# 📂 Project Structure
+
+```
 Emotion-Detection
 │
-├── emotion recognition source code.py      # Main program (Live emotion detection)
-├── emotion recognition image code.py       # Training using emotion images
+├── emotion recognition source code.py
 ├── requirements.txt
 ├── README.md
-├── LICENSE
-│
-└── Emotions
-    ├── Happy
-    ├── Surprise
-    ├── Fear
-    ├── Sad
-    └── Angry
-🚀 Features
+└── LICENSE
+```
 
-✅ Real-time emotion detection using webcam
-✅ Emotion analysis from training images
-✅ Detects multiple faces
-✅ Displays emotion with confidence percentage
-✅ Automatically creates emotion folders
-✅ Uses MTCNN for better face detection
+This project uses the **FER emotion recognition model**, so no additional dataset or emotion image folders are required.
 
-🧠 Emotions Detected
+---
 
-The system detects the following emotions:
+# ⚙️ Installation
 
-😄 Happy
+## 1️⃣ Clone the Repository
 
-😲 Surprise
-
-😨 Fear
-
-😢 Sad
-
-😡 Angry
-
-⚠️ Neutral emotion is ignored.
-
-🛠️ Installation
-1️⃣ Clone the repository
+```
 git clone https://github.com/rsamwilson2323-cloud/Emotion-Detection.git
 cd Emotion-Detection
-2️⃣ Install dependencies
+```
+
+---
+
+## 2️⃣ Install Dependencies
+
+```
 pip install -r requirements.txt
-▶️ Usage
-🧠 Step 1 — Training Using Images
+```
 
-Run the image training script:
+---
 
-python emotion recognition image code.py
+# ▶️ Usage
 
-Add images inside the Emotions folder according to emotion category:
+Run the program:
 
-Emotions/
-Happy/
-Sad/
-Angry/
-Fear/
-Surprise/
-
-The program will analyze images and print detected emotions.
-
-🎥 Step 2 — Real-Time Emotion Detection
-
-Run the main program:
-
+```
 python emotion recognition source code.py
+```
 
-📷 The webcam will start automatically.
+📷 The webcam will start automatically and begin detecting emotions in real time.
 
-Press ENTER to close the camera window.
+To stop the program:
 
-📦 Requirements
+**Press ENTER ⏎**
 
-Main libraries used:
+---
 
-Python
+# 📦 Requirements
 
-OpenCV
+Main libraries used in this project:
 
-FER
-
-TensorFlow
-
-MTCNN
+```
+opencv-python
+fer
+tensorflow
+mtcnn
+```
 
 Install them using:
 
+```
 pip install -r requirements.txt
-👨‍💻 Author
+```
 
-Sam Wilson
+---
 
-🔗 https://github.com/rsamwilson2323-cloud
+# 👨‍💻 Author
 
-💼 https://www.linkedin.com/in/sam-wilson-14b554385
+**Sam Wilson**
+
+🌐 GitHub
+https://github.com/rsamwilson2323-cloud
+
+💼 LinkedIn
+https://www.linkedin.com/in/sam-wilson-14b554385
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
