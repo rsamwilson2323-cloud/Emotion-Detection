@@ -92,3 +92,4 @@ cap.release()
 cv2.destroyAllWindows()
 
 print("\n✅ Camera closed")
+
